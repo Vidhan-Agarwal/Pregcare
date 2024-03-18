@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80% {
+        transform: translateX(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    80% {
+        transform: translateX(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.dashboard {
+    font-family: "Karla", sans-serif;
+    position: relative;
+    display: grid;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.dashboard__nav {
+    background-color: #fafafa;
+    grid-row: 1/12;
+    grid-column: 1/2;
+}
+
+.profile {
+    margin-top: 30px;
+    margin-left: 20px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    padding: 30px 30px;
+    border-radius: 40px;
+    width: fit-content;
+    background-color: #d9d9d9;
+}
+
+.nav-img {
+    margin-left: 30px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu h2 {
+    margin-left: 80px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.menu a {
+    margin-left: -10px;
+    text-decoration: none;
+    padding: 0.5rem 4rem;
+    width: fit-content;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative;
+    font-size: 1.6rem;
+    border: none;
+    cursor: pointer
+}
+
+.menu a:hover {
+    transform: translateY(-2px);
+    background-color: #2bae74;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover::after {
+    transform: scaleX(1.1) scaleY(1.1);
+    opacity: 0;
+}
+
+.menu a::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.daysleft h4 {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.girllogo {
+    margin-top: 50px;
+    height: 260px;
+    background-color: transparent;
+}
+
+.dashboard__top {
+    grid-row: 2/3;
+    grid-column: 4/6;
+    width: fit-content;
+    height: fit-content;
+    border: 3px solid black;
+    border-radius: 18px;
+    padding: 10px 4px 0px 4px;
+}
+
+.dashboard__top-title {
+    color: black;
+}
+
+.Card-container-1 {
+    display: flex;
+    grid-row: 3/4;
+    grid-column: 2/4;
+}
+
+.Card-container-2 {
+    grid-row: 4/5;
+    grid-column: 2/4;
+    display: flex;
+}
+
+.reminders {
+    grid-column: 4/6;
+    grid-row: 3/7;
+}
+
+.ReminderCard {
+    background-color: #2bae74;
+    width: 70%;
+    min-height: 50px;
+    margin: 10px;
+    padding-top: 10px;
+    border-radius: 18px;
+}
+
+.ReminderCard__description {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.reminders h2 {
+    margin-left: 90px;
+    font-weight: 900;
+    margin-bottom: 70px;
+    color: white;
+    font-size: 20px;
+    transform: translateX(-80px);
+}
+
+#blue {
+    background-color: #1cccc3;
+}
+
+#orange {
+    background-color: #ffa547;
+}
+
+#pink {
+    background-color: #ffa6c4;
+}
+
+.box-1 {
+    grid-row: 6/9;
+    grid-column: 2/4;
+    width: 70%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #d9d9d9;
+}
+
+.box-2 {
+    width: 80%;
+    grid-row: 6/9;
+    grid-column: 4/6;
+    border-radius: 30px;
+    background-color: #d9d9d9;
+}
+
+.box-3 {
+    width: 70%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #d9d9d9;
+    grid-row: 3/5;
+    grid-column: 2/4;
+}
+
+.box-4 {
+    width: 80%;
+    grid-row: 3/5;
+    grid-column: 4/6;
+    border-radius: 30px;
+    background-color: #d9d9d9;
+}
+
+.doctor {
+    position: relative;
+    left: 40%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.Footer {
+    background-color: #eee;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-row: 9/-1;
+    grid-column: 1/-1;
+}
+
+.RemainderCard__description {
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+}

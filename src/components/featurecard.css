@@ -1,0 +1,43 @@
+.FeatureCard {
+    min-height: 80px;
+    min-width: 200px;
+    max-width: 400px;
+    /* background-image: linear-gradient(to top right,#389239,#123456); */
+    background-color: #4485fd;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.FeatureCard__description {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.FeatureCard__data {
+
+    text-align: center;
+}
+
+.FeatureCard__date {
+    text-align: center;
+}
+
+#Card1 {
+    background-color: #1cccc3;
+}
+
+#Card2 {
+    background-color: #ffa6c4;
+}
+
+#Card3 {
+    background-color: #ffa547;
+}
+
+#Card4 {
+    background-color: #ff908f;
+}

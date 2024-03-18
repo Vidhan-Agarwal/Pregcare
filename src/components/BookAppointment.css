@@ -1,0 +1,84 @@
+.Container
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.dashboard__nav
+{
+    margin-right: 160px;
+    background-color: #fafafa;
+    grid-row: 1/12;
+    grid-column: 1/2;
+}
+.profile
+{
+    margin-top: 30px;
+    margin-left: 20px;
+     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    padding: 30px 30px;
+    border-radius: 40px;
+    width: fit-content;
+    background-color: #d9d9d9;
+}
+.nav-img
+{
+    margin-left: 30px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.menu
+{
+    display: flex;
+    flex-direction: column;
+}
+.menu h2
+{
+    margin-left: 80px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.menu a
+{
+  margin-left: -10px;
+  text-decoration: none;
+  padding: 0.5rem 4rem;
+  width: fit-content;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all .2s;
+  position: relative;
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer
+}
+.menu a:hover
+{
+  transform: translateY(-2px);
+  background-color: #2bae74;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2); 
+}
+  
+  .btn:hover::after {
+    transform: scaleX(1.1) scaleY(1.1);
+    opacity: 0; 
+}
+.menu a::after
+{
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
+.form__book
+{
+    margin-top: 190px;
+    align-self: center;
+}
